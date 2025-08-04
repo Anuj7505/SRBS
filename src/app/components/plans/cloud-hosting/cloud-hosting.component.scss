@@ -1,0 +1,37 @@
+h3 {
+    margin-top: 14px;
+    margin-bottom: .5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #f5117b;
+    text-align: center;
+
+
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 1px;
+    color: #130e10;
+}
+
+
+.table-responsive{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sub-style {
+    padding: 10px;
+}
+
+.sub-title {
+    font-family: 'Montserrat', sans-serif; /* or Poppins */
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    line-height: 1.5;
+}
+

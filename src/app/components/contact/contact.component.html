@@ -1,0 +1,167 @@
+
+ <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h3>
+                <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a routerLink="" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+                    <li class="breadcrumb-item active text-secondary">Contact</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Contact Start -->
+        <div class="container-fluid contact overflow-hidden py-5">
+            <div class="container py-5">
+                <div class="row g-5 mb-5">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="sub-style">
+                            <h5 class="sub-title text-primary pe-3">Quick Contact</h5>
+                        </div>
+                        <h1 class="display-5 mb-4">Have Questions? Don't Hesitate to Contact Us</h1>
+                        <p class="mb-5"><strong>SRBS Trust is here to help —</strong> from answering your queries to connecting you with the right programs or support services. Reach out to us and become part of our mission for change.</p>
+                        <div class="d-flex border-bottom mb-4 pb-4">
+                            <i class="fas fa-map-marked-alt fa-4x text-primary bg-light p-3 rounded"></i>
+                            <div class="ps-3">
+                                <h5>Get In Touch</h5>
+                                <p>📍 Village & Post Wari Kalan, Mangraura, Patti, Pratapgarh, Uttar Pradesh – 230141</p>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+    <div class="contact-container">
+        <div class="contact-box">
+            <i class="fas fa-headset fa-2x"></i>
+            <p><strong>Live chat</strong></p>
+            <p>Available 24/7 on our website for instant assistance.<p>
+        </div>
+        <div class="contact-box">
+            <i class="fas fa-tty fa-2x "></i>
+            <p><strong>Phone Support</strong></p>
+            <p><a href="#" class="fs-5 text-primary">+91 9718982251</a></p>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="contact-container">
+
+        <div class="contact-box">
+            <p><strong> Email:</strong></p>
+            <p><a href="#" class="fs-6 text-primary">abhishek21591&#64;rediffmail.com</a></p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="ps-3">
+
+    <h5 class="mb-3">Follow Us on Media:</h5>
+    <p>Follow SRBS Trust for inspiring stories, project updates, scholarship alerts, and ways you can make a difference:<p>
+    </div>
+    <div class="d-flex align-items-center pt-3">
+        <div class="me-4">
+            <div class="bg-light d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; border-radius: 10px;"><i class="fas fa-share fa-3x text-primary"></i></div>
+        </div>
+        <div class="d-flex">
+            <a class="btn btn-secondary border-secondary me-2 p-0" href="https://www.facebook.com/" ><i class="fab fa-facebook-f fa-2x"></i>facebook </a>
+            <a class="btn btn-secondary border-secondary mx-2 p-0" href="https://x.com/"><i class="fab fa-twitter fa-2x"></i>twitter </a>
+            <a class="btn btn-secondary border-secondary mx-2 p-0" href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i>instagram</a>
+        </div>
+    </div>
+</div>
+
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3">
+                        <div class="sub-style">
+                            <h5 class="sub-title text-primary pe-3">Let’s Connect</h5>
+                        </div>
+                        <h1 class="display-5 mb-4">Send Your Message</h1>
+                        <p class="mb-3">Our contact form is under setup. Meanwhile, connect with SRBS Trust for support, donations, or partnership inquiries — we’re here to serve our communities better.<a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                        <form [formGroup]="AddData" (ngSubmit)="add()">
+                            <div class="row g-4">
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" formControlName="name" placeholder="Your Name" [class.is-invalid]="AddData.controls['name'].touched && AddData.controls['name'].invalid">
+                                        <label for="name">Your Name</label>
+                                        <div class="text-danger" *ngIf="
+                                        AddData.controls['name'].touched &&
+                                        AddData.controls['name'].invalid
+                                      ">
+                                  Please enter your name
+                                   </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" formControlName="email" [class.is-invalid]="AddData.controls['email'].touched && AddData.controls['email'].invalid"/>
+                                        <div class="text-danger" *ngIf="
+                                        AddData.controls['email'].touched &&
+                                        AddData.controls['email'].invalid
+                                      ">
+                                  Please enter your email
+                                   </div>
+
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-12">
+                                    <div class="form-floating">
+                                        <input type="phone" class="form-control" id="phone" formControlName="mobile" placeholder="Phone" [class.is-invalid]="AddData.controls['mobile'].touched && AddData.controls['mobile'].invalid"/>
+                                        <div class="text-danger" *ngIf="
+                                        AddData.controls['mobile'].touched &&
+                                        AddData.controls['mobile'].invalid
+                                      ">
+                                  Please enter your mobile number
+                                   </div>
+                                        <label for="phone">Your Phone</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control"[class.is-invalid]="AddData.controls['message'].touched && AddData.controls['message'].invalid" formControlName="message" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
+                                        <label for="message">Message</label>
+                                        <div class="text-danger" *ngIf="
+                                        AddData.controls['message'].touched &&
+                                        AddData.controls['message'].invalid
+                                      ">
+                                  Please enter your message
+                                   </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button [disabled]="AddData.invalid"  class="btn btn-primary w-100 py-3">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                    </div>
+                </div>
+<div class="col-12 pt-5 wow zoomIn" data-wow-delay="0.1s">
+                            <div class="rounded h-100">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8009.859626073941!2d82.1605302605761!3d26.01562258052494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a9cd2a87bd1d5%3A0xa0191c5edadab6fe!2sBarikala%2C%20Uttar%20Pradesh%20230405!5e0!3m2!1sen!2sin!4v1754325527375!5m2!1sen!2sin" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+        <!-- Contact End -->
+
