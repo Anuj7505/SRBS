@@ -43,7 +43,7 @@ const routes: Routes = [
 
   },
   {
-    path:'reseller-hosting',
+    path:'donate-support',
     component:ResellerhostingComponent
 
   },
